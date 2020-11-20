@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>EVENTOS - IFSP - Pirituba</title>
+    <link rel="shortcut icon" href="Imagens/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <div id="menu" align="right">
+        <a href="index.html">HOME</a> | 
+        <a href="eventos.html">EVENTOS</a> | 
+        <a href="contato.html">CONTATO</a> | 
+        <a href="sobre.html">SOBRE</a> |
+        <a href="entrar.html">ENTRAR</a> 
+      </div>
+      <img src="Imagens/Logo.jpg" alt="Instituto Federal - São Paulo">
+    </header>
+
+    <main>
+      <h1>Inscreva-se</h1>
+
+      <form method="POST">
+        <fieldset>
+          <label for="evento">Evento</label>
+          <select name="evento" required>
+            <option value>-- Selecione --</option>
+            <option value="V">Voe sem asas</option>
+            <option value="F">Festa Junina</option>
+            <option value="S">Semana de Tecnologia</option>
+          </select>
+        </fieldset>
+
+        <fieldset>
+          <legend>Informações de Acesso</legend>
+          <br>
+          <div>
+            <label for="usuario">Usuário</label>
+            <input type="text" name="usuario" required>
+          </div>
+
+          <br>
+
+          <div>
+              <label for="senha">Senha</label>
+              <input type="password" name="senha" required>
+          </div>
+          
+          <br>
+
+          <div>
+              <label for="confirme-senha">Confirme a Senha</label>
+              <input type="password" name="confirme-senha" required>
+          </div>
+          <br>
+        </fieldset>
+
+        <fieldset>
+          <legend>Informações Pessoais</legend>
+          <br>
+          <div>
+              <label for="nome">Nome Completo</label>
+              <input type="text" name="nome" required>
+             </div>
+          <br>
+            <div>
+                <label for="email">E-Mail</label>
+                <input type="email" name="email" >
+            </div>
+          <br>
+            <div>
+                <label for="telefone">Celular</label>
+                <input type="tel" name="telefone" pattern="\([0-9]{2}\) [0-9]{4,5}-[0-9]{4}$">
+                <span>(99) 99999-9999</span>
+            </div>
+          <br>
+          <fieldset>
+            <legend>Sexo</legend>
+            <label for="masculino">Masculino</label>
+            <input type="radio" name="masculino" value="M">
+            <label for="feminino">Feminino</label>
+            <input type="radio" name="feminino" value="F">
+          </fieldset>
+          <br>
+          <div>
+              <label for="data-nasc">Data de Nascimento</label>
+              <input type="date" name="data-nasc">
+             </div>
+          <br>
+            <div>
+                <label for="cor">Cor Favorita</label>
+                <input type="color" name="cor" >
+            </div>
+          <br>
+            <div>
+                <label for="github">Perfil no Github</label>
+                <input type="text" name="github">
+            </div>
+          <br>
+        </fieldset>
+
+        <br>
+
+        <div>
+            <button type="submit">Inscrever</button>
+            <button type="reset">Limpar</button>
+        </div>
+
+        <br>
+      </form>
+    </main>
+
+    <br>
+
+    <footer>
+      <div>
+        <a href="https://www.facebook.com/ifsppirituba"><img src="Imagens/facebook.png" width="59" height="50" title="IFSP Facebook" alt="Facebook"></a>
+      </div>
+      <p>
+        IFSP - Câmpus Pirituba - Av. Mutinga, 951 - Jardim Santo Elias - CEP: 05110-000 - São Paulo/SP - Contato: (011) 2504-0100
+      </p>
+    </footer>
+  </body>
+</html>
