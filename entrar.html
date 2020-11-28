@@ -5,17 +5,24 @@
     <meta charset="utf-8">
     <title>ENTRAR - IFSP - Pirituba</title>
     <link rel="shortcut icon" href="Imagens/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
   </head>
 
   <body>
 
     <header>
-      <div id="menu" align="right">
-        <a href="index.html">HOME</a> | 
-        <a href="eventos.html">EVENTOS</a> | 
-        <a href="contato.html">CONTATO</a> | 
-        <a href="sobre.html">SOBRE</a> |
+      <div id="menu">
+        <a href="index.html">HOME</a>  
+        <a href="eventos.html">EVENTOS</a>  
+        <a href="contato.html">CONTATO</a>  
+        <span class="dropdown"> <a>CURSOS</a>
+          <div class="dropdown-content">
+            <p><a href="ads.html" >Análise e Desenvolvimento de Sistemas</a></p>
+    	      <p><a href="eng.html" >Engenharia de Produção</a></p>
+          </div> 
+        </span>
         <a href="entrar.html">ENTRAR</a> 
+        <a id="sobre" href="sobre.html">SOBRE</a>
       </div>
 
       <img src="Imagens/Logo.jpg" alt="Instituto Federal - São Paulo">
@@ -26,21 +33,21 @@
 
       <form method="POST">
 
-        <div>
+        <div class="graybox">
             <label for="usuario">Usuário</label>
             <input type="text" name="usuario" required="">
         </div>
 
         <br>
 
-        <div>
+        <div class="graybox">
             <label for="senha">Senha</label>
             <input type="password" name="senha" required="">
         </div>
 
         <br>
 
-        <div>
+        <div class="graybox">
             <button type="submit">Entrar</button>
             <a href="#">Esqueci a senha</a>
         </div>
