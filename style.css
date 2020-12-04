@@ -59,9 +59,7 @@ img#SejaRaro {
 }
 
 figcaption{
-  border-color: blue;
-  border-style: dotted;
-  border-width: 1px;
+  font-size: 12px
 }
 
 select {
@@ -140,4 +138,17 @@ button {
   display: block;
   width: 100%;
   border-radius: 10px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  padding: 10px;
+}
+
+.grid-item {
+  text-align: center;
+  grid-row-gap: 0px;
+  padding: 0px;
 }
