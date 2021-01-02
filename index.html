@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>HOME - IFSP - Pirituba - DWBA4</title>
     <link rel="shortcut icon" href="Imagens/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="slider.css" type="text/css">
+    <script src="script.js"></script>
   </head>  
   <body>
     <header id="topo">
@@ -24,8 +26,54 @@
       </div>
       <img src="Imagens/Logo.jpg" alt="Instituto Federal - São Paulo">
     </header>
+
     <br>
+
     <main id="mainpage">
+
+      <div class="slideshow-container">
+        <div id="mySlides1" class="mySlides fade">
+          <div class="numbertext">1 / 4</div>
+          <img src="Imagens/A.png" style="width:100%">
+          <div class="text">Caption Text</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 4</div>
+          <img src="Imagens/B.jpg" style="width:100%">
+          <div class="text">Caption Two</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 4</div>
+          <img src="Imagens/C.jpg" style="width:100%">
+          <div class="text">Caption Three</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 4</div>
+          <h1>Conheça os desafios de inovação</h1>
+          <div class="videoWrapper">
+            <p align="center">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/5g5LQe3m8Po" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </p>
+          </div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      </div>
+
+      <br>
+
+      <div style="text-align:center">
+          <span id="dot1" class="dot" onclick="currentSlide(1)" ></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+      </div>
+
       <div class="grid-container">
         <div class="grid-item">
           <img id="EleicoesIFSP" src="Imagens/eleicoes.jpg" alt="Eleições IFSP" height="50%" width="50%" >
@@ -60,14 +108,10 @@
           </figcaption>
         </div>
       </div>
-      <section>
-          <h1>
-            Conheça os desafios de inovação
-          </h1>
-          <iframe width="600" height="330" src="https://www.youtube.com/embed/5g5LQe3m8Po"> </iframe>
-      </section>
     </main>
+
     <br>
+
     <footer>
       <div>
         <a href="https://www.facebook.com/ifsppirituba"><img src="Imagens/facebook.png" width="59" height="50" title="IFSP Facebook" alt="Facebook"></a>
