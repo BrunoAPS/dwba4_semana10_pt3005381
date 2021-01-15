@@ -23,6 +23,10 @@ div#menu .dropdown {
     display: inline-block;
 }
 
+div#menu .dropdown2 {
+    display: inline-block;
+}
+
 div#menu .dropdown-content {
   display: none;
   position: absolute;
@@ -34,6 +38,11 @@ div#menu .dropdown-content {
 
 div#menu .dropdown:hover .dropdown-content {
   display: block;
+}
+
+div#menu .dropdown2:hover .dropdown-content {
+  display: block;
+  align-content: center;
 }
 
 div#menu .dropdown-content a{
@@ -125,7 +134,7 @@ textarea{
 
 
 button {
-  background-color: #4CAF50; /* Green */
+  background-color: #4CAF50;
   border: none;
   color: white;
   padding: 15px 32px;
@@ -147,4 +156,55 @@ button {
   text-align: center;
   grid-row-gap: 0px;
   padding: 0px;
+}
+
+table{
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  background-color:white;
+  width: 100%;
+  color: black;
+  padding: 10px 10px;
+  border-color: gainsboro;
+  box-sizing: border-box;
+  border-style: solid;
+  border-radius: 10px;
+}
+
+th{
+  font-family: arial, sans-serif;
+  background-color: #4CAF50;
+  width: 100%;
+  color: white;
+  padding: 10px 60px;
+  border-color: gainsboro;
+  border-style: solid;
+  border-width: 1px;
+}
+
+tr{
+  font-family: arial, sans-serif;
+  background-color:white;
+  width: 100%;
+  color: black;
+  padding: 10px 10px;
+  border-color: gainsboro;
+}
+
+tr:nth-child(even) {
+  background-color: whitesmoke;
+}
+
+td{
+  font-family: arial, sans-serif;
+  width: 100%;
+  color: black;
+  padding: 10px 10px;
+  border-color: gainsboro;
+  border-style: solid;
+  border-width: 1px;
+}
+
+div#componentesCurriculares{
+  text-align: center;
 }
